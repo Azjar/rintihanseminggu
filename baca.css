@@ -1,0 +1,268 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Menghilangkan overflow horizontal */
+}
+
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.section1 .row,
+.section2 .row,
+.section3 .row,
+.section4 .row {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: 'Libre Baskerville', serif;
+    color: #332B00;
+}
+/* Warna latar belakang penuh untuk elemen pembungkus */
+.navbar-wrapper {
+    background-color: rgba(255, 247, 204, 0.3); /* Warna latar belakang dengan 80% opasitas */
+    padding: 10px 0; 
+}
+
+/* Styling navbar */
+.navbar {
+    margin: 50px auto; 
+    background: transparent; /* Pastikan background navbar transparan untuk tidak menutupi background wrapper */
+    padding: 10px 20px; /* Opsional, untuk memberikan ruang di dalam navbar */
+    width: 90%; /* Lebar navbar (sesuaikan sesuai kebutuhan) */
+}
+
+.nav-link {
+    font-family: 'Libre Baskerville', serif;
+    margin-right: 2rem;
+    font-size: 1rem;
+    color: #332B00 !important;
+    transition: transform 0.1s ease; /* Animasi saat ukuran berubah */
+}
+
+@media (min-width: 992px) {
+    .nav-link:hover {
+        transform: scale(0.8);
+        color: #B69574 !important;
+    }
+}
+
+
+
+.navbar-brand {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem !important;
+    font-style: italic;
+    color: #332B00 !important; /* Warna teks (sesuaikan dengan desain Anda) */
+}
+
+/* Styling Breadcumb */
+.breadcrumb {
+    display: inline-block;
+    margin: 0 auto; /* Atur margin otomatis agar elemen berada di tengah */
+}
+
+.breadcrumb a:hover {
+    color: #b0b0b0; /* Warna biru saat hover */
+}
+
+
+
+/* ISI BACA */
+
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.sectionbaca{
+    background-image: url('asset/bgsec4.png');
+    width: 100%;      /* Lebar penuh dari kontainer */
+    height: auto;     /* Menjaga rasio aspek */
+    object-fit: cover; /* Mengisi elemen sepenuhnya, mungkin terpotong */
+    padding-top: 1px;
+}
+
+.sectionbaca .pemisah{
+    max-width: 25%;
+    height: 1.5px;
+    background-color: #000;
+    border: none;
+    margin: 0 auto;
+}
+.sectionbaca .tanggal{
+    font-size: 14px;
+}
+.sectionbaca .header{
+    height: 614px;
+    width: 1163px;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+.formatted-text {
+    white-space: pre-line;
+}
+
+.list-inline-item {
+    margin-right: 1rem;
+}
+
+.list-inline-item a {
+    color: #332b00;
+}
+
+.indikator p {
+    font-size: large;
+}
+
+/* CSS CARD RECENT */
+.terbaru {
+   margin-right: 10px;
+   margin-left: 10px;
+}
+.baca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.puisi {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 22rem;
+    margin-bottom: 5rem;
+}
+
+.sectionbaca .card {
+    background-color: transparent;
+    border: transparent;
+    transition: transform 0.3s ease; /* Animasi saat ukuran berubah */
+    border-radius: 0;
+}
+
+.sectionbaca .card:hover {
+    transform: scale(1.01); /* Opsional: Memperbesar saat dihover untuk efek interaktif */
+    background-color: #86ac87;
+}
+.sectionbaca .card-footer{
+    border-top: none;
+    background-color: transparent;
+}
+.sectionbaca .garcard{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background-color: black;
+    border: black;
+    height: 1.5px;
+    max-width: 10rem;
+}
+.sectionbaca .card img {
+    border-radius: 0;
+}
+
+.sectionbaca a{
+    text-decoration: none;
+    color: #332B00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+/* FOOTER */
+
+.footer {
+    background-color: #d8c0a7; /* Warna latar belakang sesuai gambar */
+    padding: 2rem 0;
+    color: #332b00; /* Warna teks sesuai gambar */
+    font-family: 'Libre Baskerville', serif; /* Font family yang digunakan */
+}
+
+.footer h1{
+    font-size: 3.5rem;
+}
+.footer h6 {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #332b00;
+    margin-bottom: 1rem; /* Memberikan jarak antara h6 dan ul */
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    margin: 0; /* Menghilangkan margin default dari ul */
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem; /* Memberikan jarak antara setiap item dalam ul */
+}
+
+.footer a {
+    color: #332b00;
+    text-decoration: none;
+}
+.footer .dua {
+    margin-left: 2rem;
+}
+
+.footer a:hover {
+    color: #B69574 !important;
+}
+
+.footer .branding h2 {
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.footer .list-inline-item {
+    margin-right: 1rem;
+}
+
+.footer .list-inline-item a {
+    color: #332b00;
+    font-size: 1.5rem;
+}
+
+.footer .list-inline-item a:hover {
+    color: #564c0e; /* Warna ikon saat hover */
+}
+
+.footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #332b00;
+    border-top: 1px solid #564c0e;
+    padding-top: 0.5rem;
+    text-align: center; /* Memastikan teks center */
+}
+

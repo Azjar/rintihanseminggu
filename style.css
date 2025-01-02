@@ -1,0 +1,490 @@
+.section1 .row,
+.section2 .row,
+.section3 .row,
+.section4 .row,
+.section5 .row {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: 'Libre Baskerville', serif;
+    color: #332B00;
+}
+/* Warna latar belakang penuh untuk elemen pembungkus */
+.navbar-wrapper {
+    background-color: rgba(255, 247, 204, 0.3); /* Warna latar belakang dengan 80% opasitas */
+    padding: 10px 0; 
+}
+
+/* Styling navbar */
+.navbar {
+    margin: 50px auto; 
+    background: transparent; /* Pastikan background navbar transparan untuk tidak menutupi background wrapper */
+    padding: 10px 20px; /* Opsional, untuk memberikan ruang di dalam navbar */
+    width: 90%; /* Lebar navbar (sesuaikan sesuai kebutuhan) */
+}
+
+.nav-link {
+    font-family: 'Libre Baskerville', serif;
+    margin-right: 2rem;
+    font-size: 1rem;
+    color: #332B00 !important;
+    transition: transform 0.1s ease; /* Animasi saat ukuran berubah */
+}
+
+@media (min-width: 992px) {
+    .nav-link:hover {
+        transform: scale(0.8);
+        color: #B69574 !important;
+    }
+}
+
+
+
+.navbar-brand {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem !important;
+    font-style: italic;
+    color: #332B00 !important; /* Warna teks (sesuaikan dengan desain Anda) */
+}
+
+/* SECTION 1 */
+
+.container-fluid {
+     padding-right: 0 !important;
+     padding-left: 0 !important;
+}
+
+
+.section1 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    background-image: url('asset/banner.png');
+    background-size: cover; /* Pastikan background menutupi seluruh area */
+    background-position: center; /* Memastikan posisi gambar background berada di tengah */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Pastikan gambar di dalam col-md-5 tidak memiliki margin atau padding yang tidak diinginkan */
+#asbanner {
+    width: 100%; /* Mengisi penuh kolom */
+    height: auto; /* Menjaga rasio aspek */
+    display: block; /* Menghilangkan space putih di sekeliling gambar */
+    margin: 0;
+    padding: 0;
+}
+
+/* Atur padding dan margin pada elemen lain yang mungkin menimbulkan masalah */
+
+@font-face {
+    font-family: 'Pushkin';
+    src: url('asset/Pushkin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.rintihan {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem; /* Sesuaikan padding jika diperlukan */
+    margin: 0 auto; /* Ini akan memusatkan elemen dalam kolom jika ada margin kiri/kanan */
+}
+
+.rintihan h1 {
+    font-family: 'Pushkin';
+    font-size: 7.5rem;
+    margin-top: 8rem;
+    margin-bottom: 3rem; /* Tambahkan margin bawah jika ingin ada jarak dengan paragraf */
+    color: #332b00;
+}
+
+.rintihan p {
+    font-family: 'Libre Baskerville', serif;
+    max-width: 75%;
+    text-align: center;
+    margin: 0 auto; /* Memastikan paragraf juga berada di tengah */
+    color: #332b00;
+}
+
+.view.btn {
+    font-family: 'Libre Baskerville', serif;
+    border-radius: 15px;
+    color: #332b00 !important; /* Tambahkan !important untuk memaksa penerapan warna teks */
+    border-color: #332b00 !important; /* Tambahkan !important untuk memaksa penerapan warna outline */
+    margin-left: 0;
+    align-self: self-start;
+}
+
+.view.btn:hover {
+    background-color: wheat; /* Warna latar belakang saat hover */
+    color: #332b00 !important; /* Tambahkan !important untuk memaksa penerapan warna teks saat hover */
+    border-color: #0D354F !important; /* Tambahkan !important untuk memaksa penerapan warna outline saat hover */
+}
+
+/* SECTION 2 */
+.kiri {
+    background-image: url('asset/assec3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kanan{
+    background-image: url('asset/sec2.png');
+    width: 100%;      /* Lebar penuh dari kontainer */
+    height: auto;     /* Menjaga rasio aspek */
+    object-fit: cover; /* Mengisi elemen sepenuhnya, mungkin terpotong */
+}
+.garis{
+    max-width: 80%;
+    background-color: black;
+    margin: 0 auto;
+    height: 1.5px;
+    margin-bottom: 4rem;
+}
+.deskripsi {
+    text-align: center;
+    font-size: larger;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    line-height: 3.5rem; /* Mengatur jarak antar baris */
+}
+
+/* SECTION 3 */
+
+.section3{
+    background-image: url('asset/bgsec3.png');
+    width: 100%;      /* Lebar penuh dari kontainer */
+    height: auto;     /* Menjaga rasio aspek */
+    object-fit: cover; /* Mengisi elemen sepenuhnya, mungkin terpotong */
+}
+
+.top3 {
+    margin: 0 auto; /* Memastikan elemen berada di tengah dengan margin otomatis */
+}
+
+.row {
+    display: flex; /* Mengaktifkan Flexbox pada row */
+    justify-content: center; /* Memusatkan kartu secara horizontal */
+    flex-wrap: wrap; /* Membungkus kartu jika ruang tidak cukup */
+}
+
+.terbaik {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Menambahkan jarak antar card secara vertikal */
+}
+.top {
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.top3 .center-card {
+    width: 22rem !important;
+    /* height: 700px !important; */
+}
+
+.top3 .card {
+    background-color: #D9D9D9;
+    transition: transform 0.3s ease; /* Animasi saat ukuran berubah */
+    /* height: 250px !important; */
+    /* border-radius: 0; */
+}
+
+.top3 .card:hover {
+    transform: scale(1.05); /* Opsional: Memperbesar saat dihover untuk efek interaktif */
+    background-color: #86ac87;
+}
+.top .card-footer{
+    border-top: none;
+    background-color: transparent;
+}
+
+/* SECTION 4 */
+
+.section4{
+    background-image: url('asset/bgsec4.png');
+    width: 100%;      /* Lebar penuh dari kontainer */
+    height: auto;     /* Menjaga rasio aspek */
+    object-fit: cover; /* Mengisi elemen sepenuhnya, mungkin terpotong */
+}
+
+.baca {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Menambahkan jarak antar card secara vertikal */
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.line {
+    height: 1px;
+    background-color: #5c4b2f;
+    width: 5rem;
+    margin: 0 5rem;
+}
+
+.xxx {
+    font-size: 14px;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    color: #5c4b2f;
+}
+
+.puisi {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 22rem;
+
+}
+
+.section4 .card {
+    background-color: transparent;
+    border: transparent;
+    transition: transform 0.3s ease; /* Animasi saat ukuran berubah */
+    border-radius: 0;
+}
+
+.section4 .card:hover {
+    transform: scale(1.01); /* Opsional: Memperbesar saat dihover untuk efek interaktif */
+    background-color: #86ac87;
+}
+.section4 .card-footer{
+    border-top: none;
+    background-color: transparent;
+}
+.section4 .garcard{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background-color: black;
+    border: black;
+    height: 1.5px;
+    max-width: 10rem;
+}
+.section4 .card img {
+    border-radius: 0;
+}
+
+.section4 a{
+    text-decoration: none;
+    color: #332B00;
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: block;
+}
+
+
+.swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #332b00;
+    opacity: 1;
+    background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #332b00;
+}
+
+
+
+/* Mengubah warna ikon di dalam tombol */
+.custom-carousel-btn i {
+    color: #000; /* Warna ikon */
+}
+
+/* Menghilangkan border dan shadow saat tombol difokuskan atau diklik */
+.custom-carousel-btn:focus, 
+.custom-carousel-btn:active {
+    outline: none;
+    box-shadow: none;
+    border: none; /* Menghilangkan border */
+}
+
+
+/* ABOUT PENULIS */
+.section5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom dengan ukuran sama */
+    gap: 1rem; /* Jarak antar kartu */
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    margin: 0 auto; /* Pastikan posisi section terpusat */
+    min-height: 100vh; /* Tinggi minimal layar penuh */
+    background-color: #f3f4f1;
+}
+
+
+.section5 .card {
+    background: none;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0; /* Hapus padding agar gambar memenuhi card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    height: 15rem; /* Tetapkan tinggi card */
+}
+.section5  .aku {
+    background: none; /* Hapus background jika gambar menjadi latar */
+    border: none;
+}
+.section5 .kamu {
+    background-image: url('asset/bgsec4.png');
+}
+
+.section5 img {
+    width: 100%; /* Gambar akan menyesuaikan dengan lebar card */
+    height: 100%; /* Gambar akan menyesuaikan dengan tinggi card */
+    object-fit: cover; /* Gambar akan menutupi seluruh area card */
+    object-position: center; /* Memastikan gambar diposisikan di tengah */
+    /* border-radius: 20px; */
+}
+
+
+.section5 p{
+    margin: 50px;
+}
+.penulis{
+    font-family: 'Pushkin';
+    font-size: 5rem;
+    text-align: center;
+    padding: 1rem;
+    color: #332b00;
+}
+
+
+/* Layout untuk ukuran handphone */
+@media (max-width: 990px) {
+    .section5 {
+        grid-template-columns: 1fr; /* Layout 1 kolom untuk layar kecil */
+        gap: 0.5rem;
+        min-height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .section5 .card {
+       
+        height: 15rem; /* Tetapkan tinggi card agar seragam */
+        display: flex;
+        flex-direction: column; /* Susunan isi dalam card */
+        justify-content: center; /* Pusatkan secara vertikal */
+        align-items: center; /* Pusatkan secara horizontal */
+        text-align: center;
+    }
+
+    .section5 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .section5 p {
+        margin: 1rem; /* Berikan ruang di sekitar teks */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #d8c0a7; /* Warna latar belakang sesuai gambar */
+    padding: 2rem 0;
+    color: #332b00; /* Warna teks sesuai gambar */
+    font-family: 'Libre Baskerville', serif; /* Font family yang digunakan */
+}
+
+.footer h1{
+    font-size: 3.5rem;
+}
+.footer h6 {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #332b00;
+    margin-bottom: 1rem; /* Memberikan jarak antara h6 dan ul */
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    margin: 0; /* Menghilangkan margin default dari ul */
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem; /* Memberikan jarak antara setiap item dalam ul */
+}
+
+.footer a {
+    color: #332b00;
+    text-decoration: none;
+}
+.footer .dua {
+    margin-left: 2rem;
+}
+
+.footer a:hover {
+    color: #B69574 !important;
+}
+
+.footer .branding h2 {
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.footer .list-inline-item {
+    margin-right: 1rem;
+}
+
+.footer .list-inline-item a {
+    color: #332b00;
+    font-size: 1.5rem;
+}
+
+.footer .list-inline-item a:hover {
+    color: #564c0e; /* Warna ikon saat hover */
+}
+
+.footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #332b00;
+    border-top: 1px solid #564c0e;
+    padding-top: 0.5rem;
+    text-align: center; /* Memastikan teks center */
+}
+
