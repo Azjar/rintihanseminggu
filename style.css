@@ -101,6 +101,23 @@
     color: #332b00;
 }
 
+/* Untuk layar tablet  */
+@media (max-width: 1024px) {
+    .rintihan h1 {
+        font-size: 6rem;
+        margin-top: 6rem;
+    }
+}
+
+/* Untuk layar smartphone */
+@media (max-width: 414px) {
+    .rintihan h1 {
+        font-size: 3.5rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+
 .rintihan p {
     font-family: 'Libre Baskerville', serif;
     max-width: 75%;
