@@ -110,16 +110,9 @@ body, html {
     white-space: pre-line;
 }
 
-/* Untuk layar tablet  */
-@media (max-width: 1024px) {
-    .formatted-text {
-        font-size: 1.5rem;
-        /* margin-top: 6rem; */
-    }
-}
 
 /* Untuk layar smartphone */
-@media (max-width: 410px) {
+@media (max-width: 480px) {
     .formatted-text {
         font-size: 1.5rem;
         /* margin-top: 4rem; */
