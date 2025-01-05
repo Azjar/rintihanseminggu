@@ -18,18 +18,41 @@
 
 /* Styling navbar */
 .navbar {
-    margin: 50px auto; 
-    background: transparent; /* Pastikan background navbar transparan untuk tidak menutupi background wrapper */
-    padding: 10px 20px; /* Opsional, untuk memberikan ruang di dalam navbar */
-    width: 90%; /* Lebar navbar (sesuaikan sesuai kebutuhan) */
+    margin: 20px auto; 
+    background: transparent;
+    padding: 10px 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .d-flex {
+    flex: 1;
+}
+
+.navbar .d-flex:first-child {
+    justify-content: flex-start;
+}
+
+.navbar .d-flex:last-child {
+    justify-content: flex-end;
+}
+
+.navbar-brand {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem ; 
+    font-style: italic;
+    color: #332B00 !important;
+    text-align: center;
 }
 
 .nav-link {
     font-family: 'Libre Baskerville', serif;
-    margin-right: 2rem;
+    margin: 0 1rem;
     font-size: 1rem;
     color: #332B00 !important;
-    transition: transform 0.1s ease; /* Animasi saat ukuran berubah */
+    transition: transform 0.1s ease;
 }
 
 @media (min-width: 992px) {
@@ -39,14 +62,36 @@
     }
 }
 
-
-
-.navbar-brand {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 2.5rem !important;
-    font-style: italic;
-    color: #332B00 !important; /* Warna teks (sesuaikan dengan desain Anda) */
+/* Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center; /* Semua elemen ke tengah */
+        gap: 15px; /* Jarak antar elemen */
+    }
+    .navbar .d-flex {
+        justify-content: center;
+        gap: 10px; /* Tambahkan jarak antar link */
+    }
+    .nav-link {
+        font-size: 0.9rem; /* Sedikit kecilkan ukuran font */
+        margin: 0 0.5rem; /* Kurangi margin di layar kecil */
+    }
+    .navbar-brand {
+        font-size: 1rem; /* Kurangi ukuran brand pada layar kecil */
+    }
 }
+
+@media (max-width: 480px) {
+    .nav-link {
+        font-size: 0.8rem; /* Lebih kecilkan untuk layar sangat kecil */
+    }
+    .navbar-brand {
+        font-size: 0.82rem; /* Brand lebih kecil */
+    }
+}
+
+
 
 /* SECTION 1 */
 
@@ -101,6 +146,7 @@
     color: #332b00;
 }
 
+
 /* Untuk layar tablet  */
 @media (max-width: 1024px) {
     .rintihan h1 {
@@ -117,6 +163,7 @@
         margin-bottom: 2rem;
     }
 }
+
 
 .rintihan p {
     font-family: 'Libre Baskerville', serif;
@@ -144,7 +191,7 @@
 /* SECTION 2 */
 
 .section2 p {
-        white-space: pre-line;
+    white-space: pre-line;
 }
 .kiri {
     background-image: url('asset/assec3.png');
@@ -173,6 +220,7 @@
     margin-bottom: 10rem;
     line-height: 3.5rem; /* Mengatur jarak antar baris */
 }
+
 
 /* SECTION 3 */
 
@@ -312,6 +360,9 @@
     display: block;
 }
 
+.swiper-pagination {
+    /* margin-top: 2rem; */
+}
 
 .swiper-pagination-bullet {
     width: 30px;
