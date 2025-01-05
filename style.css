@@ -144,7 +144,6 @@
 /* SECTION 2 */
 .section2 {
     height: 600px; /* Contoh tinggi tetap */
-    display: flex; /* Untuk tata letak fleksibel */
     align-items: center; /* Elemen vertikal berada di tengah */
     justify-content: center; /* Elemen horizontal berada di tengah */
 }
