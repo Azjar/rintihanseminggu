@@ -142,10 +142,9 @@
 }
 
 /* SECTION 2 */
-.section2 {
-    height: 600px; /* Contoh tinggi tetap */
-    align-items: center; /* Elemen vertikal berada di tengah */
-    justify-content: center; /* Elemen horizontal berada di tengah */
+
+.section2 p {
+        white-space: pre-line;
 }
 .kiri {
     background-image: url('asset/assec3.png');
